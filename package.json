@@ -1,0 +1,14 @@
+{
+  "name": "pr-1",
+  "version": "1.0.0",
+  "description": "Zeiterfassungssystem",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Porter",
+  "license": "ISC",
+  "dependencies": {
+    "html5-boilerplate": "^7.3.0"
+  }
+}
