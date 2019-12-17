@@ -9,6 +9,9 @@
   "author": "David Porter",
   "license": "ISC",
   "dependencies": {
-    "html5-boilerplate": "^7.3.0"
+    "chalk": "^3.0.0",
+    "express": "^4.17.1",
+    "html5-boilerplate": "^7.3.0",
+    "nodemon": "^2.0.2"
   }
 }
