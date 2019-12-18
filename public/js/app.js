@@ -25,14 +25,39 @@ function newRow() {
         text3 = document.createTextNode(gehen)
     }
     let text4 = document.createTextNode('')
-    let text5 = document.createTextNode('Entf.')
+
+    const entfBtn = document.createElement('input')
+    entfBtn.type = 'button'
+    entfBtn.className = 'entfBtn'
+    entfBtn.id = 'entfBtn'
+    entfBtn.onclick = testFunc3
+    // let text5 = document.createTextNode(createButton())
+
+
     cell1.appendChild(text1);
     cell2.appendChild(text2);
     cell3.appendChild(text3);
     cell4.appendChild(text4);
-    cell5.appendChild(text5);	
+    cell5.appendChild(entfBtn);	
 };
 
-function testFunc() {
+function testFunc () {
     // alert('test')
+}
+
+function testFunc3 () {
+    document.getElementById('entfBtn').addEventListener('click', function() {
+        
+        document.getElementById('myTable').deleteRow(0)
+        // alert('testing entfbtn')
+    })
+}
+
+function deleteRowFunc () {
+
+    document.getElementById('entfBtn').addEventListener('click', function() {
+        document.getElementById('myTable').deleteRow(0)
+    })
+
+    
 }
