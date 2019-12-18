@@ -1,9 +1,8 @@
-const date = require('date-and-time')
-
 function newRow() {
     const checkbox = document.getElementById('myonoffswitch');
     const kommen = 'Kommen'
     const gehen = 'Gehen'
+    const now = new Date();
     const tableRef = document.getElementById('myTable').getElementsByTagName('tbody')[0];
 
     // Insert a row in the table
@@ -16,8 +15,8 @@ function newRow() {
     const cell4 = newRow.insertCell(3);
     const cell5 = newRow.insertCell(4);    
 
-    let text1 = document.createTextNode('dateNow')
-    let text2 = document.createTextNode('timeNow')
+    let text1 = document.createTextNode(now.toLocaleTimeString('de-DE'))
+    let text2 = document.createTextNode(now.toDateString())
     // let text3  = document.createTextNode('Kommen')  
     let text3 = ""; 
     if(checkbox.checked){

@@ -98,7 +98,8 @@
        background-color: #1F2739;
  }
  
- .container td:nth-child(2) { color: #FFF842; }
+ .container td:nth-child(1) { color: #FFF842; }
+ .container td:nth-child(2) { font-size: 80%; }
 
  /* .bez { color: #FB667A;} */
 
