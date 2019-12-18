@@ -13,7 +13,7 @@
         <h2>Benutzer {{>benutzer}} angemeldet</h2>
 
         <div class="onoffswitch">
-            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" onchange="newRow()">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" onchange="newRow(); testFunc();">
             <label class="onoffswitch-label" for="myonoffswitch">
                 <span class="onoffswitch-inner"></span>
                 <span class="onoffswitch-switch"></span>
@@ -25,20 +25,20 @@
         <table class="container" id="myTable">
             <thead>
                 <tr>
-                    <th><h1>Zeit</h1></th>
                     <th><h1>Datum</h1></th>
+                    <th><h1>Zeit</h1></th>
                     <th><h1>Bezeichnung</h1></th>
                     <th><h1>Kommentar</h1></th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                {{!-- <tr>
                     <td>08:06</td>
                     <td>Tue 17-12-2019</td>
                     <td>Kommen</td>
                     <td></td>
                     <td><button></button></td>
-                </tr>                
+                </tr>                 --}}
             </tbody>
         </table>
         <script src="./js/app.js"></script>

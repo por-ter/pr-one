@@ -85,14 +85,24 @@
  .container tr:nth-child(even) {
        background-color: #2C3446;
  }
+
+ .container tr:nth-child(odd) td:nth-child(3) {
+   color: #4CFAA3;
+ }
+
+ .container tr:nth-child(even) td:nth-child(3) {
+  color: #FB667A;
+}
  
  .container th {
        background-color: #1F2739;
  }
  
- .container td:first-child { color: #FFF842; }
+ .container td:nth-child(2) { color: #FFF842; }
 
- .container td:nth-child(3) { color: #4cfaa3;}
+ /* .bez { color: #FB667A;} */
+
+ /* .container td:nth-child(3) { color: #4cfaa3;} */
  
  .container tr:hover {
     background-color: #464A52;
