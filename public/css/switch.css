@@ -52,3 +52,18 @@
 
 /* ------------------------------------------------------------------------------------ */
 
+.entfBtn {
+    position: relative;
+    background: #FB667A;
+    border: 1px solid #FB667A;
+    border-radius: 2em;
+    color: white;
+    display: inline-block;
+    font-size: 12px;
+    height: 20px;
+    line-height: 2px;
+    margin: 0 0 8px;
+    padding: 0;
+    text-align: center;
+    width: 20px;
+    }

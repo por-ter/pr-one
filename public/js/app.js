@@ -28,9 +28,10 @@ function newRow() {
 
     const entfBtn = document.createElement('input')
     entfBtn.type = 'button'
+    entfBtn.value = 'X'
     entfBtn.className = 'entfBtn'
     entfBtn.id = 'entfBtn'
-    entfBtn.onclick = testFunc3
+    entfBtn.onclick = deleteCurrentRow
     // let text5 = document.createTextNode(createButton())
 
 
@@ -45,19 +46,8 @@ function testFunc () {
     // alert('test')
 }
 
-function testFunc3 () {
-    document.getElementById('entfBtn').addEventListener('click', function() {
-        
-        document.getElementById('myTable').deleteRow(0)
-        // alert('testing entfbtn')
-    })
-}
-
-function deleteRowFunc () {
-
-    document.getElementById('entfBtn').addEventListener('click', function() {
-        document.getElementById('myTable').deleteRow(0)
-    })
-
-    
+function deleteCurrentRow () {
+    const td = event.target.parentNode;
+    let tr = td.parentNode;
+    tr.parentNode.removeChild(tr);
 }
