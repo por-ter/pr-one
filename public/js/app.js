@@ -15,30 +15,39 @@ function newRow() {
     const cell4 = newRow.insertCell(3);
     const cell5 = newRow.insertCell(4);    
 
-    let text1 = document.createTextNode(now.toLocaleTimeString('de-DE'))
-    let text2 = document.createTextNode(now.toDateString())
-    // let text3  = document.createTextNode('Kommen')  
-    let text3 = ""; 
-    if(checkbox.checked){
-        text3 = document.createTextNode(kommen)
-    } else {
-        text3 = document.createTextNode(gehen)
-    }
-    let text4 = document.createTextNode('')
+    // Zeit - Cell1
+    let stempelnZeit = document.createTextNode(now.toLocaleTimeString('de-DE'))
 
+    // Datum - Cell2
+    let stempelnDatum = document.createTextNode(now.toDateString())
+
+    // Bezeichnung - Cell3
+    let bez = ""; 
+    if(checkbox.checked){
+        bez = document.createTextNode(kommen)
+    } else {
+        bez = document.createTextNode(gehen)
+    }
+
+    // Comment box - Cell4
+    let kommBox = document.createElement('input')
+    kommBox.type = 'text'
+    kommBox.name = 'kommBox'
+    kommBox.id = 'kommBox'
+
+    // Delete button - Cell5
     const entfBtn = document.createElement('input')
     entfBtn.type = 'button'
     entfBtn.value = 'X'
     entfBtn.className = 'entfBtn'
     entfBtn.id = 'entfBtn'
     entfBtn.onclick = deleteCurrentRow
-    // let text5 = document.createTextNode(createButton())
 
 
-    cell1.appendChild(text1);
-    cell2.appendChild(text2);
-    cell3.appendChild(text3);
-    cell4.appendChild(text4);
+    cell1.appendChild(stempelnZeit);
+    cell2.appendChild(stempelnDatum);
+    cell3.appendChild(bez);
+    cell4.appendChild(kommBox);
     cell5.appendChild(entfBtn);	
 };
 
