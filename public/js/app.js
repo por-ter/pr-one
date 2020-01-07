@@ -60,3 +60,18 @@ function deleteCurrentRow () {
     let tr = td.parentNode;
     tr.parentNode.removeChild(tr);
 }
+
+////////////////////////////////////////////////////////////////////////////////////////
+// ts-stopwatch
+
+const Stopwatch = require('ts-stopwatch').Stopwatch
+
+const stopwatch = new Stopwatch();
+
+console.log(stopwatch.start())
+
+console.log(stopwatch.getTime())
+
+console.log(stopwatch)
+
+
