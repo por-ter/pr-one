@@ -24,7 +24,7 @@ app.use(express.static(publicDirPath))
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Login',
-        benutzer: 'David Porter' // to do - make dynamic **
+        benutzer: 'David Porter' // to do - make dynamic *****
     })
 })
 
