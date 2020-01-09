@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node src/app.js",
     "dev": "nodemon src/app.js -e js, hbs",
-    "worker": "node src/app.js"
+    "worker": "node src/app.js",
+    "mongostart": "/Users/d.porter/mongodb/bin/mongod.exe --dbpath=/Users/d.porter/mongodb-data"
   },
   "author": "David Porter",
   "license": "ISC",
@@ -18,8 +19,11 @@
     "handlebars": "^4.5.3",
     "hbs": "^4.0.6",
     "html5-boilerplate": "^7.3.0",
+    "mongodb": "^3.4.1",
+    "mongoose": "^5.8.6",
     "request": "^2.88.0",
-    "ts-stopwatch": "0.0.4"
+    "ts-stopwatch": "0.0.4",
+    "validator": "^12.1.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
