@@ -20,13 +20,23 @@ hbs.registerPartials(partialsPath)
 // Setup static directory to server
 app.use(express.static(publicDirPath))
 
-// # render index page
+// # render login (index) page
 app.get('', (req, res) => {
     res.render('index', {
+        title: 'Login',
+        benutzer: 'David Porter' // to do - make dynamic **
+    })
+})
+
+
+// # render zeiterfass table page
+app.get('/zeiterfass', (req, res) => {
+    res.render('zeiterfass', {
         title: 'Zeiterfassung',
         benutzer: 'David Porter' // to do - make dynamic **
     })
 })
+
 
 // Start server
 app.listen(port, () => {
